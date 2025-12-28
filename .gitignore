@@ -12,12 +12,97 @@
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
 
-# Dependency directories (remove the comment below to include it)
+# Dependency directories
 # vendor/
-.vscode/
 
+# ===================
+# Secrets & Credentials
+# ===================
+.env
+.env.*
+*.env
+.envrc
+secrets/
+credentials/
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*_rsa
+*_dsa
+*_ecdsa
+*_ed25519
+*.secret
+api_keys.txt
+config.local.*
+
+# ===================
+# IDE & Editor
+# ===================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# ===================
+# OS Generated
+# ===================
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ===================
+# Go Specific
+# ===================
 coverage
 coverage.*
 unit-tests.xml
-.idea
+*.prof
+*.cpu
+*.mem
+
+# ===================
+# Build & Output
+# ===================
+dist/
+build/
+out/
+tmp/
+temp/
+*.log
+logs/*.log
+
+# ===================
+# Docker
+# ===================
+docker-compose.override.yml
+.docker/
+
+# ===================
+# Testing
+# ===================
+*.test
+test-results/
+.nyc_output/
+
+# ===================
+# Misc
+# ===================
+*.bak
+*.backup
+*.orig
+*.tmp
+.cache/
+node_modules/
