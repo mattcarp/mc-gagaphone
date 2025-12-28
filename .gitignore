@@ -42,6 +42,7 @@ config.local.*
 # ===================
 .vscode/
 .idea/
+.windsurf/
 *.swp
 *.swo
 *~
